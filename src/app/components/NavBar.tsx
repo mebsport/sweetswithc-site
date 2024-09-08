@@ -20,7 +20,7 @@ const navLinks = [
   },
   {
     href: '/order',
-    title: 'Order Form',
+    title: 'Order',
   },
 ]
 
@@ -30,21 +30,21 @@ const NavBar = () => {
   return (
     <nav className='fixed top-0 right-0 left-0 z-10 bg-[#121212] bg-opacity-100'>
       <div className='flex flex-wrap items-center justify-between mx-auto px-4 py-2 '>
-        <Link href={'/'} className='text-lg md:text-5xl text-white font-mono'>
+        <Link href={'/'} className='text-lg md:text-5xl text-[#FFC0CB] font-mono'>
           TEXT LOGO PLACEHOLDER
         </Link>
         <div className='mobile-menu block md:hidden'>
           {!navBarOpen ? (
             <button
               onClick={() => setNavBarOpen(true)}
-              className='flex items-center px-3 py-2 border rounded border-slate-200 text-slate-200 hover:text-[#FFC0CB] hover:border-[#FFC0CB]'
+              className='flex items-center px-3 py-2 border rounded border-[#FFC0CB] text-[#FFC0CB] hover:text-[#FFD700] hover:border-[#FFD700]'
             >
               <Bars3Icon className='h-5 w-5' />
             </button>
           ) : (
             <button
               onClick={() => setNavBarOpen(false)}
-              className='flex items-center px-3 py-2 border rounded border-slate-200 text-slate-200 hover:text-[#FFC0CB] hover:border-[#FFC0CB]'
+              className='flex items-center px-3 py-2 border rounded border-[#FFC0CB] text-[#FFC0CB] hover:text-[#FFD700] hover:border-[#FFD700]'
             >
               <XMarkIcon className='h-5 w-5' />
             </button>
