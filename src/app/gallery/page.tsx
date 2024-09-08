@@ -4,11 +4,11 @@ import ImageGallery from '../components/ImageGallery'
 
 export default function Home() {
   return (
-    <main className='flex min-h-screen flex-col bg-black'>
+    <main className='flex min-h-screen flex-col bg-[black]'>
       <NavBar />
       <div className='container mt-24 mx-auto py-4 px-12'>
         <NavBar />
-        <ImageGallery/>
+        <ImageGallery />
       </div>
     </main>
   )
